@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margins -->
+    <dimen name="margin_start_45">45dp</dimen>
+    <dimen name="margin_start_40">40dp</dimen>
+    <dimen name="margin_start_30">30dp</dimen>
+
+    <dimen name="margin_top_30">30dp</dimen>
+    <dimen name="margin_top_16">16dp</dimen>
+    <dimen name="margin_top_7">7dp</dimen>
+    <dimen name="margin_top_5">5dp</dimen>
+
+    <dimen name="margin_end_30">30dp</dimen>
+
+    <!-- Font sizes -->
+    <dimen name="extra_large_font">56sp</dimen>
+    <dimen name="medium_font">16sp</dimen>
+    <dimen name="Small_font">14sp</dimen>
+    <dimen name="font_size">12sp</dimen>
+</resources>
