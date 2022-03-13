@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather Application</string>
+    <string name="temperature">72\u00B0</string>
+    <string name="degree">\u00B0</string>
+    <string name="location">St. Paul, MN</string>
+    <string name="feel_like">Feel like 78\u00B0</string>
+    <string name="low_temperature">Low 65\u00B0</string>
+    <string name="high_temperature">High 80\u00B0</string>
+    <string name="humidity">Humidity 100%</string>
+    <string name="pressure">Pressure 1023 hPa</string>
+    <string name="sunset">Sunset: 9:00pm</string>
+    <string name="sunrise">Sunrise: 8:00am</string>
+    <string name="no_internet_connection">Please check your internet connection</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

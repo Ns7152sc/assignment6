@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.CurrentConditionsFragment">
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_16"
+            android:text="@string/location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_font"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_40"
+            android:layout_marginTop="@dimen/margin_top_16"
+            android:text="@string/temperature"
+            android:textColor="@color/black"
+            android:textSize="@dimen/extra_large_font"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLocation" />
+
+        <TextView
+            android:id="@+id/tvFeelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_45"
+            android:layout_marginTop="@dimen/margin_top_5"
+            android:text="@string/feel_like"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Small_font"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTemperature" />
+
+        <ImageView
+            android:id="@+id/ivSun"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/margin_end_30"
+            android:src="@drawable/sun"
+            app:layout_constraintBottom_toBottomOf="@id/tvFeelLike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvTemperature"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvLowTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_end_30"
+            android:layout_marginTop="@dimen/margin_top_16"
+            android:text="@string/low_temperature"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_font"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFeelLike" />
+
+        <TextView
+            android:id="@+id/tvHighTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_7"
+            android:text="@string/high_temperature"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_font"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvLowTemperature"
+            app:layout_constraintTop_toBottomOf="@id/tvLowTemperature" />
+
+        <TextView
+            android:id="@+id/tvHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_7"
+            android:text="@string/humidity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_font"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvLowTemperature"
+            app:layout_constraintTop_toBottomOf="@id/tvHighTemperature" />
+
+        <TextView
+            android:id="@+id/tvPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_7"
+            android:text="@string/pressure"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_font"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvLowTemperature"
+            app:layout_constraintTop_toBottomOf="@id/tvHumidity" />
+
+        <Button
+            android:id="@+id/btnForecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Forecast"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPressure" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
